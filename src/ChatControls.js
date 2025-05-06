@@ -7,7 +7,7 @@ export function ChatControls() {
         dispatch(actions.createNewConversation())
     };
 
-    return <div className="chat-controls">
-        <button className="new-conversation" onClick={onNewConversation}>New conversation</button>
+    return <div className="chat-controls" data-testid="chat-controls">
+        <button className="new-conversation" data-testid="new-conversation-button" onClick={onNewConversation}>New conversation</button>
     </div>;
 }
