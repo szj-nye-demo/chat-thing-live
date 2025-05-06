@@ -41,7 +41,7 @@ export const sendMessageThunk = createAsyncThunk('app/sendMessage', async (messa
 
 async function getResponse(id, message) {
     // /api/ai/message
-    const response = await fetch('/api/echo', {
+    const response = await fetch('/api/ai/message', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
