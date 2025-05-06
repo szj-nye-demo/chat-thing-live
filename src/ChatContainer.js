@@ -15,7 +15,7 @@ export function ChatContainer({ messages, onUserMessage, isLoading, conversation
     return (
         <div className="chat-container">
             <ChatControls />
-            <h1>Chat Container #{conversationId}</h1>
+            <h1>Chat <small>(#{conversationId})</small></h1>
             <div className="messages">
                 {messages.map(({ role, message }, key) => {
                     return (
